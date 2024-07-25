@@ -1,0 +1,1233 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Jul 24 21:57:21 2024
+# Process ID: 13640
+# Current directory: C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1
+# Command line: vivado.exe -log pcileech_enigma_x1_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pcileech_enigma_x1_top.tcl
+# Log file: C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/pcileech_enigma_x1_top.vds
+# Journal file: C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1\vivado.jou
+# Running On        :jeffhr
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :12th Gen Intel(R) Core(TM) i5-12600K
+# CPU Frequency     :3686 MHz
+# CPU Physical cores:10
+# CPU Logical cores :16
+# Host memory       :34129 MB
+# Swap memory       :2147 MB
+# Total Virtual     :36276 MB
+# Available Virtual :22833 MB
+#-----------------------------------------------------------
+source pcileech_enigma_x1_top.tcl -notrace
+WARNING: [filemgmt 56-12] File 'c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/bram_bar_zero4k/pcileech_bar_zero4k.coe' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/drom_pcie_cfgspace_writemask/pcileech_cfgspace_writemask.coe' cannot be added to the project because it already exists in the project, skipping this file
+Command: synth_design -top pcileech_enigma_x1_top -part xc7a75tfgg484-2
+Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'pcie_7x_0' is locked:
+* IP 'pcie_7x_0' is configured as a user-managed IP. In this mode it is the user's responsibility to manage all IP files.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a75t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a75t'
+INFO: [Device 21-403] Loading part xc7a75tfgg484-2
+INFO: [Device 21-9227] Part: xc7a75tfgg484-2 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6904
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1539.090 ; gain = 445.113
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'pcileech_enigma_x1_top' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_enigma_x1_top.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'IfComToFifo' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:19]
+INFO: [Synth 8-6155] done synthesizing module 'IfComToFifo' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:19]
+INFO: [Synth 8-6157] synthesizing module 'IfPCIeFifoCfg' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:199]
+INFO: [Synth 8-6155] done synthesizing module 'IfPCIeFifoCfg' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:199]
+INFO: [Synth 8-6157] synthesizing module 'IfPCIeFifoTlp' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:220]
+INFO: [Synth 8-6155] done synthesizing module 'IfPCIeFifoTlp' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:220]
+INFO: [Synth 8-6157] synthesizing module 'IfPCIeFifoCore' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:244]
+INFO: [Synth 8-6155] done synthesizing module 'IfPCIeFifoCore' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:244]
+INFO: [Synth 8-6157] synthesizing module 'IfShadow2Fifo' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:267]
+INFO: [Synth 8-6155] done synthesizing module 'IfShadow2Fifo' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:267]
+INFO: [Synth 8-6157] synthesizing module 'OBUF' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:96458]
+INFO: [Synth 8-6155] done synthesizing module 'OBUF' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:96458]
+INFO: [Synth 8-6157] synthesizing module 'pcileech_com' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_com.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'fifo_64_64_clk2_comrx' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_64_64_clk2_comrx_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_64_64_clk2_comrx' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_64_64_clk2_comrx_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fifo_32_32_clk1_comtx' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_32_32_clk1_comtx_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_32_32_clk1_comtx' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_32_32_clk1_comtx_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fifo_256_32_clk2_comtx' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_256_32_clk2_comtx_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_256_32_clk2_comtx' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_256_32_clk2_comtx_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pcileech_ft601' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_ft601.sv:12]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_ft601.sv:139]
+INFO: [Synth 8-6155] done synthesizing module 'pcileech_ft601' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_ft601.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'pcileech_com' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_com.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'pcileech_fifo' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_fifo.sv:16]
+	Parameter PARAM_DEVICE_ID bound to: 9 - type: integer 
+	Parameter PARAM_VERSION_NUMBER_MAJOR bound to: 4 - type: integer 
+	Parameter PARAM_VERSION_NUMBER_MINOR bound to: 14 - type: integer 
+	Parameter PARAM_CUSTOM_VALUE bound to: -1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fifo_34_34' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_34_34_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_34_34' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_34_34_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pcileech_mux' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_mux.sv:14]
+INFO: [Synth 8-6155] done synthesizing module 'pcileech_mux' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_mux.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'fifo_64_64_clk1_fifocmd' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_64_64_clk1_fifocmd_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_64_64_clk1_fifocmd' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_64_64_clk1_fifocmd_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_fifo.sv:441]
+INFO: [Synth 8-6157] synthesizing module 'STARTUPE2' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:137432]
+	Parameter PROG_USR bound to: FALSE - type: string 
+	Parameter SIM_CCLK_FREQ bound to: 0.000000 - type: double 
+INFO: [Synth 8-6155] done synthesizing module 'STARTUPE2' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:137432]
+INFO: [Synth 8-6155] done synthesizing module 'pcileech_fifo' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_fifo.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'pcileech_pcie_a7' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_pcie_a7.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'IfPCIeSignals' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:40]
+INFO: [Synth 8-6155] done synthesizing module 'IfPCIeSignals' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:40]
+INFO: [Synth 8-6157] synthesizing module 'IfPCIeTlpRxTx' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:300]
+INFO: [Synth 8-6155] done synthesizing module 'IfPCIeTlpRxTx' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:300]
+INFO: [Synth 8-6157] synthesizing module 'IfPCIeTlpRxTx' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:300]
+INFO: [Synth 8-6155] done synthesizing module 'IfPCIeTlpRxTx' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:300]
+INFO: [Synth 8-6157] synthesizing module 'IfAXIS128' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:165]
+INFO: [Synth 8-6155] done synthesizing module 'IfAXIS128' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:165]
+INFO: [Synth 8-6157] synthesizing module 'IfAXIS128' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:165]
+INFO: [Synth 8-6155] done synthesizing module 'IfAXIS128' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:165]
+INFO: [Synth 8-6157] synthesizing module 'IfAXIS128' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:165]
+INFO: [Synth 8-6155] done synthesizing module 'IfAXIS128' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:165]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE2' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:73797]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE2' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:73797]
+INFO: [Synth 8-6157] synthesizing module 'pcileech_pcie_cfg_a7' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_pcie_cfg_a7.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'fifo_64_64' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_64_64_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_64_64' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_64_64_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fifo_32_32_clk2' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_32_32_clk2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_32_32_clk2' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_32_32_clk2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pcileech_pcie_cfg_a7' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_pcie_cfg_a7.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'pcileech_tlps128_src64' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_pcie_a7.sv:303]
+INFO: [Synth 8-6155] done synthesizing module 'pcileech_tlps128_src64' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_pcie_a7.sv:303]
+INFO: [Synth 8-6157] synthesizing module 'pcileech_pcie_tlp_a7' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_pcie_tlp_a7.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'IfAXIS128' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:165]
+INFO: [Synth 8-6155] done synthesizing module 'IfAXIS128' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:165]
+INFO: [Synth 8-6157] synthesizing module 'IfAXIS128' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:165]
+INFO: [Synth 8-6155] done synthesizing module 'IfAXIS128' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:165]
+INFO: [Synth 8-6157] synthesizing module 'IfAXIS128' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:165]
+INFO: [Synth 8-6155] done synthesizing module 'IfAXIS128' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:165]
+INFO: [Synth 8-6157] synthesizing module 'IfAXIS128' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:165]
+INFO: [Synth 8-6155] done synthesizing module 'IfAXIS128' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:165]
+INFO: [Synth 8-6157] synthesizing module 'pcileech_tlps128_bar_controller' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_tlps128_bar_controller.sv:42]
+INFO: [Synth 8-6157] synthesizing module 'pcileech_tlps128_bar_rdengine' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_tlps128_bar_controller.sv:395]
+INFO: [Synth 8-6157] synthesizing module 'fifo_74_74_clk1_bar_rd1' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_74_74_clk1_bar_rd1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_74_74_clk1_bar_rd1' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_74_74_clk1_bar_rd1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fifo_134_134_clk1_bar_rdrsp' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_134_134_clk1_bar_rdrsp_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_134_134_clk1_bar_rdrsp' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_134_134_clk1_bar_rdrsp_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pcileech_tlps128_bar_rdengine' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_tlps128_bar_controller.sv:395]
+INFO: [Synth 8-6157] synthesizing module 'pcileech_tlps128_bar_wrengine' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_tlps128_bar_controller.sv:255]
+INFO: [Synth 8-6157] synthesizing module 'fifo_141_141_clk1_bar_wr' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_141_141_clk1_bar_wr_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_141_141_clk1_bar_wr' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_141_141_clk1_bar_wr_stub.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_tlps128_bar_controller.sv:325]
+INFO: [Synth 8-6155] done synthesizing module 'pcileech_tlps128_bar_wrengine' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_tlps128_bar_controller.sv:255]
+INFO: [Synth 8-6157] synthesizing module 'pcileech_bar_impl_zerowrite4k' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_tlps128_bar_controller.sv:749]
+INFO: [Synth 8-6157] synthesizing module 'bram_bar_zero4k' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/bram_bar_zero4k_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bram_bar_zero4k' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/bram_bar_zero4k_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pcileech_bar_impl_zerowrite4k' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_tlps128_bar_controller.sv:749]
+INFO: [Synth 8-6157] synthesizing module 'pcileech_bar_impl_loopaddr' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_tlps128_bar_controller.sv:710]
+INFO: [Synth 8-6155] done synthesizing module 'pcileech_bar_impl_loopaddr' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_tlps128_bar_controller.sv:710]
+INFO: [Synth 8-6157] synthesizing module 'pcileech_bar_impl_none' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_tlps128_bar_controller.sv:678]
+INFO: [Synth 8-6155] done synthesizing module 'pcileech_bar_impl_none' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_tlps128_bar_controller.sv:678]
+INFO: [Synth 8-6155] done synthesizing module 'pcileech_tlps128_bar_controller' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_tlps128_bar_controller.sv:42]
+INFO: [Synth 8-6157] synthesizing module 'pcileech_tlps128_cfgspace_shadow' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_tlps128_cfgspace_shadow.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'fifo_49_49_clk2' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_49_49_clk2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_49_49_clk2' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_49_49_clk2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pcileech_mem_wrap' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_tlps128_cfgspace_shadow.sv:194]
+INFO: [Synth 8-6157] synthesizing module 'bram_pcie_cfgspace' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/bram_pcie_cfgspace_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bram_pcie_cfgspace' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/bram_pcie_cfgspace_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'drom_pcie_cfgspace_writemask' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/drom_pcie_cfgspace_writemask_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'drom_pcie_cfgspace_writemask' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/drom_pcie_cfgspace_writemask_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pcileech_mem_wrap' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_tlps128_cfgspace_shadow.sv:194]
+INFO: [Synth 8-6157] synthesizing module 'pcileech_cfgspace_pcie_tx' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_tlps128_cfgspace_shadow.sv:147]
+INFO: [Synth 8-6157] synthesizing module 'fifo_129_129_clk1' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_129_129_clk1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_129_129_clk1' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_129_129_clk1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pcileech_cfgspace_pcie_tx' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_tlps128_cfgspace_shadow.sv:147]
+INFO: [Synth 8-6157] synthesizing module 'fifo_43_43_clk2' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_43_43_clk2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_43_43_clk2' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_43_43_clk2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pcileech_tlps128_cfgspace_shadow' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_tlps128_cfgspace_shadow.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'pcileech_tlps128_filter' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_pcie_tlp_a7.sv:156]
+INFO: [Synth 8-6155] done synthesizing module 'pcileech_tlps128_filter' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_pcie_tlp_a7.sv:156]
+INFO: [Synth 8-6157] synthesizing module 'pcileech_tlps128_dst_fifo' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_pcie_tlp_a7.sv:104]
+INFO: [Synth 8-6157] synthesizing module 'fifo_134_134_clk2' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_134_134_clk2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_134_134_clk2' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_134_134_clk2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pcileech_tlps128_dst_fifo' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_pcie_tlp_a7.sv:104]
+INFO: [Synth 8-6157] synthesizing module 'pcileech_tlps128_src_fifo' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_pcie_tlp_a7.sv:206]
+INFO: [Synth 8-6157] synthesizing module 'fifo_1_1_clk2' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_1_1_clk2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_1_1_clk2' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_1_1_clk2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fifo_134_134_clk2_rxfifo' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_134_134_clk2_rxfifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_134_134_clk2_rxfifo' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/.Xil/Vivado-13640-jeffhr/realtime/fifo_134_134_clk2_rxfifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pcileech_tlps128_src_fifo' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_pcie_tlp_a7.sv:206]
+INFO: [Synth 8-6157] synthesizing module 'pcileech_tlps128_sink_mux1' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_pcie_tlp_a7.sv:294]
+INFO: [Synth 8-6155] done synthesizing module 'pcileech_tlps128_sink_mux1' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_pcie_tlp_a7.sv:294]
+INFO: [Synth 8-6155] done synthesizing module 'pcileech_pcie_tlp_a7' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_pcie_tlp_a7.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'pcileech_tlps128_dst64' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_pcie_a7.sv:269]
+INFO: [Synth 8-6155] done synthesizing module 'pcileech_tlps128_dst64' (0#1) [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_pcie_a7.sv:269]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/synth/pcie_7x_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pcie2_top' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie2_top.v:59]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_core_top' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_core_top.v:63]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pcie_top' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_top.v:62]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_axi_basic_top' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_top.v:68]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_axi_basic_rx' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_rx.v:70]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_axi_basic_rx_pipeline' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_rx_pipeline.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_axi_basic_rx_pipeline' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_rx_pipeline.v:70]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_axi_basic_rx_null_gen' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_rx_null_gen.v:71]
+INFO: [Synth 8-226] default block is never used [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_rx_null_gen.v:253]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_axi_basic_rx_null_gen' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_rx_null_gen.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_axi_basic_rx' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_rx.v:70]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_axi_basic_tx' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_tx.v:70]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_axi_basic_tx_thrtl_ctl' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_tx_thrtl_ctl.v:71]
+INFO: [Synth 8-226] default block is never used [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_tx_thrtl_ctl.v:573]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_axi_basic_tx_thrtl_ctl' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_tx_thrtl_ctl.v:71]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_axi_basic_tx_pipeline' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_tx_pipeline.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_axi_basic_tx_pipeline' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_tx_pipeline.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_axi_basic_tx' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_tx.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_axi_basic_top' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_top.v:68]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pcie_7x' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_7x.v:63]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pcie_bram_top_7x' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_bram_top_7x.v:72]
+WARNING: [Synth 8-11581] system function call 'time' not supported [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_bram_top_7x.v:139]
+INFO: [Synth 8-251] [1'b0]  ROWS_TX 1 COLS_TX 2 [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_bram_top_7x.v:139]
+WARNING: [Synth 8-11581] system function call 'time' not supported [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_bram_top_7x.v:140]
+INFO: [Synth 8-251] [1'b0]  ROWS_RX 1 COLS_RX 4 [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_bram_top_7x.v:140]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pcie_brams_7x' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_brams_7x.v:65]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pcie_bram_7x' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_bram_7x.v:63]
+INFO: [Synth 8-6157] synthesizing module 'xil_internal_svlib_BRAM_TDP_MACRO' [C:/Xilinx/Vivado/2024.1/data/verilog/src/unimacro/BRAM_TDP_MACRO.v:30]
+INFO: [Synth 8-6157] synthesizing module 'RAMB36E1' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:134912]
+INFO: [Synth 8-6155] done synthesizing module 'RAMB36E1' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:134912]
+INFO: [Synth 8-6155] done synthesizing module 'xil_internal_svlib_BRAM_TDP_MACRO' (0#1) [C:/Xilinx/Vivado/2024.1/data/verilog/src/unimacro/BRAM_TDP_MACRO.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pcie_bram_7x' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_bram_7x.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pcie_brams_7x' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_brams_7x.v:65]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pcie_brams_7x__parameterized0' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_brams_7x.v:65]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pcie_bram_7x__parameterized0' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_bram_7x.v:63]
+INFO: [Synth 8-6157] synthesizing module 'xil_internal_svlib_BRAM_TDP_MACRO__parameterized0' [C:/Xilinx/Vivado/2024.1/data/verilog/src/unimacro/BRAM_TDP_MACRO.v:30]
+INFO: [Synth 8-6157] synthesizing module 'RAMB36E1__parameterized0' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:134912]
+INFO: [Synth 8-6155] done synthesizing module 'RAMB36E1__parameterized0' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:134912]
+INFO: [Synth 8-6155] done synthesizing module 'xil_internal_svlib_BRAM_TDP_MACRO__parameterized0' (0#1) [C:/Xilinx/Vivado/2024.1/data/verilog/src/unimacro/BRAM_TDP_MACRO.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pcie_bram_7x__parameterized0' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_bram_7x.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pcie_brams_7x__parameterized0' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_brams_7x.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pcie_bram_top_7x' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_bram_top_7x.v:72]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_2_1' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:110076]
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_2_1' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:110076]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pcie_7x' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_7x.v:63]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pcie_pipe_pipeline' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_pipe_pipeline.v:63]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pcie_pipe_misc' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_pipe_misc.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pcie_pipe_misc' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_pipe_misc.v:63]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pcie_pipe_lane' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_pipe_lane.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pcie_pipe_lane' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_pipe_lane.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pcie_pipe_pipeline' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_pipe_pipeline.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pcie_top' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_top.v:62]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_core_top.v:1492]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_core_top.v:1493]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_core_top.v:1494]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_core_top.v:1495]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_core_top.v:1496]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_core_top.v:1497]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_core_top.v:1498]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_core_top.v:1499]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_core_top.v:1500]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_core_top.v:1502]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_gt_top' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gt_top.v:62]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_gt_rx_valid_filter_7x' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gt_rx_valid_filter_7x.v:62]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gt_rx_valid_filter_7x.v:191]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_gt_rx_valid_filter_7x' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gt_rx_valid_filter_7x.v:62]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pipe_wrapper' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_wrapper.v:156]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pipe_clock' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_clock.v:67]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6157] synthesizing module 'BUFGCTRL' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:2013]
+INFO: [Synth 8-6155] done synthesizing module 'BUFGCTRL' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:2013]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:82388]
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:82388]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pipe_clock' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_clock.v:67]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_gtp_pipe_reset' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gtp_pipe_reset.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_gtp_pipe_reset' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gtp_pipe_reset.v:67]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_qpll_reset' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_qpll_reset.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_qpll_reset' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_qpll_reset.v:66]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_gtp_pipe_rate' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gtp_pipe_rate.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_gtp_pipe_rate' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gtp_pipe_rate.v:67]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_gtp_pipe_drp' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gtp_pipe_drp.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_gtp_pipe_drp' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gtp_pipe_drp.v:67]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pipe_eq' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_eq.v:67]
+INFO: [Synth 8-226] default block is never used [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_eq.v:402]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_rxeq_scan' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_rxeq_scan.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_rxeq_scan' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_rxeq_scan.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pipe_eq' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_eq.v:67]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_gt_common' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gt_common.v:56]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_qpll_drp' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_qpll_drp.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'GTPE2_COMMON' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:50895]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_gtp_cpllpd_ovrd' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gtp_cpllpd_ovrd.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_qpll_wrapper' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_qpll_wrapper.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_gt_common' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gt_common.v:56]
+INFO: [Synth 8-226] default block is never used [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_user.v:354]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pipe_user' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_user.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pipe_sync' (0#1) [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_sync.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'GTPE2_CHANNEL' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:50193]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3848] Net tlps_filtered\.tready in module/entity pcileech_pcie_tlp_a7 does not have driver. [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:174]
+WARNING: [Synth 8-3848] Net tlps_filtered\.has_data in module/entity pcileech_pcie_tlp_a7 does not have driver. [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:175]
+WARNING: [Synth 8-3848] Net tlp_tx\.user in module/entity pcileech_tlps128_dst64 does not have driver. [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_pcie_a7.sv:272]
+WARNING: [Synth 8-6014] Unused sequential element trn_rdllp_src_rdy_d_reg was removed.  [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_tx_thrtl_ctl.v:421]
+WARNING: [Synth 8-6014] Unused sequential element reg_tlast_reg was removed.  [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_tx_thrtl_ctl.v:655]
+WARNING: [Synth 8-6014] Unused sequential element flush_axi_reg was removed.  [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_tx_pipeline.v:528]
+WARNING: [Synth 8-6014] Unused sequential element reg_eios_detected_reg was removed.  [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gt_rx_valid_filter_7x.v:135]
+WARNING: [Synth 8-6014] Unused sequential element gt_rx_is_skp0_q_reg was removed.  [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gt_rx_valid_filter_7x.v:144]
+WARNING: [Synth 8-6014] Unused sequential element gt_rx_is_skp1_q_reg was removed.  [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gt_rx_valid_filter_7x.v:145]
+WARNING: [Synth 8-6014] Unused sequential element pclk_sel_slave_reg was removed.  [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_clock.v:590]
+WARNING: [Synth 8-6014] Unused sequential element gen3_rdy_reg was removed.  [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_user.v:562]
+WARNING: [Synth 8-6014] Unused sequential element rxsync_fsm_disable.rxsync_done_reg was removed.  [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_sync.v:613]
+WARNING: [Synth 8-6014] Unused sequential element pipe_lane[0].gt_rxrcvrdet_c_reg was removed.  [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_wrapper.v:1660]
+WARNING: [Synth 8-3848] Net tlps_rx\.tready in module/entity pcileech_pcie_a7 does not have driver. [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:174]
+WARNING: [Synth 8-3848] Net tlps_rx\.has_data in module/entity pcileech_pcie_a7 does not have driver. [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_header.svh:175]
+WARNING: [Synth 8-3917] design pcileech_enigma_x1_top has port pcie_wake_n driven by constant 1
+WARNING: [Synth 8-7129] Port GT_RXDISPERR[7] in module pcie_7x_0_gt_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GT_RXDISPERR[6] in module pcie_7x_0_gt_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GT_RXDISPERR[5] in module pcie_7x_0_gt_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GT_RXDISPERR[4] in module pcie_7x_0_gt_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GT_RXNOTINTABLE[7] in module pcie_7x_0_gt_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GT_RXNOTINTABLE[6] in module pcie_7x_0_gt_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GT_RXNOTINTABLE[5] in module pcie_7x_0_gt_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GT_RXNOTINTABLE[4] in module pcie_7x_0_gt_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GT_RXCHBONDO[4] in module pcie_7x_0_gt_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GT_GEN3 in module pcie_7x_0_gt_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GT_RX_CONVERGE in module pcie_7x_0_gt_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GT_GTREFCLK0 in module pcie_7x_0_gt_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GT_CPLLPD in module pcie_7x_0_gt_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GT_CPLLRESET in module pcie_7x_0_gt_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GT_RXDFELPMRESET in module pcie_7x_0_gt_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GT_RXCHBONDI[4] in module pcie_7x_0_gt_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK_CLK in module pcie_7x_0_pipe_clock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK_RXOUTCLK_IN[0] in module pcie_7x_0_pipe_clock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INT_QPLLLOCK_OUT[1] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INT_QPLLOUTCLK_OUT[1] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INT_QPLLOUTREFCLK_OUT[1] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_QPLLRESET[1] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIPE_PCLK_IN in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIPE_RXUSRCLK_IN in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIPE_RXOUTCLK_IN[0] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIPE_DCLK_IN in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIPE_USERCLK1_IN in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIPE_USERCLK2_IN in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIPE_OOBCLK_IN in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIPE_MMCM_LOCK_IN in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_CRSCODE[11] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_CRSCODE[10] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_CRSCODE[9] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_CRSCODE[8] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_CRSCODE[7] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_CRSCODE[6] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_CRSCODE[5] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_CRSCODE[4] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_CRSCODE[3] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_CRSCODE[2] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_CRSCODE[1] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_CRSCODE[0] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_FSM[17] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_FSM[16] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_FSM[15] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_FSM[14] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_FSM[13] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_FSM[12] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_FSM[11] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_FSM[10] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_FSM[9] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_FSM[8] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_FSM[7] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_FSM[6] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_FSM[5] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_FSM[4] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_FSM[3] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_FSM[2] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_FSM[1] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_FSM[0] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_DONE[1] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_DONE[0] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_RESET[1] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_DRP_RESET[0] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_QPLLLOCK[1] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_QPLLLOCK[0] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_QPLLOUTCLK[1] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_QPLLOUTCLK[0] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_QPLLOUTREFCLK[1] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLL_QPLLOUTREFCLK[0] in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIPE_JTAG_EN in module pcie_7x_0_pipe_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PLM_IN_RS in module pcie_7x_0_gt_rx_valid_filter_7x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_tx_reset in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_rx1_polarity in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_tx1_compliance in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_tx1_char_is_k[1] in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_tx1_char_is_k[0] in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_tx1_data[15] in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_tx1_data[14] in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_tx1_data[13] in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_tx1_data[12] in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_tx1_data[11] in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_tx1_data[10] in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_tx1_data[9] in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_tx1_data[8] in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_tx1_data[7] in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_tx1_data[6] in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_tx1_data[5] in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_tx1_data[4] in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_tx1_data[3] in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_tx1_data[2] in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_tx1_data[1] in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_tx1_data[0] in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_tx1_elec_idle in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_tx1_powerdown[1] in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_tx1_powerdown[0] in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_rx2_polarity in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_tx2_compliance in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_tx2_char_is_k[1] in module pcie_7x_0_gt_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pipe_tx2_char_is_k[0] in module pcie_7x_0_gt_top is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1776.141 ; gain = 682.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1776.141 ; gain = 682.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1776.141 ; gain = 682.164
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.473 . Memory (MB): peak = 1776.141 ; gain = 0.000
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_134_134_clk1_bar_rdrsp/fifo_134_134_clk1_bar_rdrsp/fifo_134_134_clk1_bar_rdrsp_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/i_fifo_134_134_clk1_bar_rdrsp'
+Finished Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_134_134_clk1_bar_rdrsp/fifo_134_134_clk1_bar_rdrsp/fifo_134_134_clk1_bar_rdrsp_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/i_fifo_134_134_clk1_bar_rdrsp'
+Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_43_43_clk2/fifo_43_43_clk2/fifo_43_43_clk2_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_fifo_43_43_clk2'
+Finished Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_43_43_clk2/fifo_43_43_clk2/fifo_43_43_clk2_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_fifo_43_43_clk2'
+Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_32_32_clk2/fifo_32_32_clk2/fifo_32_32_clk2_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_cfg_a7/i_fifo_pcie_cfg_rx'
+Finished Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_32_32_clk2/fifo_32_32_clk2/fifo_32_32_clk2_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_cfg_a7/i_fifo_pcie_cfg_rx'
+Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_129_129_clk1/fifo_129_129_clk1/fifo_129_129_clk1_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_pcileech_cfgspace_pcie_tx/i_fifo_129_129_clk1'
+Finished Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_129_129_clk1/fifo_129_129_clk1/fifo_129_129_clk1_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_pcileech_cfgspace_pcie_tx/i_fifo_129_129_clk1'
+Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_74_74_clk1_bar_rd1/fifo_74_74_clk1_bar_rd1/fifo_74_74_clk1_bar_rd1_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/i_fifo_74_74_clk1_bar_rd1'
+Finished Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_74_74_clk1_bar_rd1/fifo_74_74_clk1_bar_rd1/fifo_74_74_clk1_bar_rd1_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/i_fifo_74_74_clk1_bar_rd1'
+Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/bram_bar_zero4k/bram_bar_zero4k/bram_bar_zero4k_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/i_bram_bar_zero4k'
+Finished Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/bram_bar_zero4k/bram_bar_zero4k/bram_bar_zero4k_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/i_bram_bar_zero4k'
+Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_1_1_clk2/fifo_1_1_clk2/fifo_1_1_clk2_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_src_fifo/i_fifo_1_1_clk2'
+Finished Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_1_1_clk2/fifo_1_1_clk2/fifo_1_1_clk2_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_src_fifo/i_fifo_1_1_clk2'
+Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_134_134_clk2_rxfifo/fifo_134_134_clk2_rxfifo/fifo_134_134_clk2_rxfifo_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_src_fifo/i_fifo_134_134_clk2_rxfifo'
+Finished Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_134_134_clk2_rxfifo/fifo_134_134_clk2_rxfifo/fifo_134_134_clk2_rxfifo_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_src_fifo/i_fifo_134_134_clk2_rxfifo'
+Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_64_64_clk1_fifocmd/fifo_64_64_clk1_fifocmd/fifo_64_64_clk1_fifocmd_in_context.xdc] for cell 'i_pcileech_fifo/i_fifo_cmd_rx'
+Finished Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_64_64_clk1_fifocmd/fifo_64_64_clk1_fifocmd/fifo_64_64_clk1_fifocmd_in_context.xdc] for cell 'i_pcileech_fifo/i_fifo_cmd_rx'
+Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_32_32_clk1_comtx/fifo_32_32_clk1_comtx/fifo_32_32_clk1_comtx_in_context.xdc] for cell 'i_pcileech_com/i_fifo_32_32_clk2_comtx'
+Finished Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_32_32_clk1_comtx/fifo_32_32_clk1_comtx/fifo_32_32_clk1_comtx_in_context.xdc] for cell 'i_pcileech_com/i_fifo_32_32_clk2_comtx'
+Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/bram_pcie_cfgspace/bram_pcie_cfgspace/bram_pcie_cfgspace_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_pcileech_mem_wrap/i_bram_pcie_cfgspace'
+Finished Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/bram_pcie_cfgspace/bram_pcie_cfgspace/bram_pcie_cfgspace_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_pcileech_mem_wrap/i_bram_pcie_cfgspace'
+Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_141_141_clk1_bar_wr/fifo_141_141_clk1_bar_wr/fifo_141_141_clk1_bar_wr_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_wrengine/i_fifo_141_141_clk1_bar_wr'
+Finished Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_141_141_clk1_bar_wr/fifo_141_141_clk1_bar_wr/fifo_141_141_clk1_bar_wr_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_wrengine/i_fifo_141_141_clk1_bar_wr'
+Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_64_64_clk2_comrx/fifo_64_64_clk2_comrx/fifo_64_64_clk2_comrx_in_context.xdc] for cell 'i_pcileech_com/i_fifo_64_64_clk2_comrx'
+Finished Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_64_64_clk2_comrx/fifo_64_64_clk2_comrx/fifo_64_64_clk2_comrx_in_context.xdc] for cell 'i_pcileech_com/i_fifo_64_64_clk2_comrx'
+Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_34_34/fifo_34_34/fifo_34_34_in_context.xdc] for cell 'i_pcileech_fifo/i_fifo_loop_tx'
+Finished Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_34_34/fifo_34_34/fifo_34_34_in_context.xdc] for cell 'i_pcileech_fifo/i_fifo_loop_tx'
+Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_34_34/fifo_34_34/fifo_34_34_in_context.xdc] for cell 'i_pcileech_fifo/i_fifo_cmd_tx'
+Finished Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_34_34/fifo_34_34/fifo_34_34_in_context.xdc] for cell 'i_pcileech_fifo/i_fifo_cmd_tx'
+Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/drom_pcie_cfgspace_writemask/drom_pcie_cfgspace_writemask/drom_pcie_cfgspace_writemask_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_pcileech_mem_wrap/i_drom_pcie_cfgspace_writemask'
+Finished Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/drom_pcie_cfgspace_writemask/drom_pcie_cfgspace_writemask/drom_pcie_cfgspace_writemask_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_pcileech_mem_wrap/i_drom_pcie_cfgspace_writemask'
+Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_64_64/fifo_64_64/fifo_64_64_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_cfg_a7/i_fifo_pcie_cfg_tx'
+Finished Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_64_64/fifo_64_64/fifo_64_64_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_cfg_a7/i_fifo_pcie_cfg_tx'
+Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_256_32_clk2_comtx/fifo_256_32_clk2_comtx/fifo_256_32_clk2_comtx_in_context.xdc] for cell 'i_pcileech_com/i_fifo_256_32_clk2_comtx'
+Finished Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_256_32_clk2_comtx/fifo_256_32_clk2_comtx/fifo_256_32_clk2_comtx_in_context.xdc] for cell 'i_pcileech_com/i_fifo_256_32_clk2_comtx'
+Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_49_49_clk2/fifo_49_49_clk2/fifo_49_49_clk2_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_fifo_49_49_clk2'
+Finished Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_49_49_clk2/fifo_49_49_clk2/fifo_49_49_clk2_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_fifo_49_49_clk2'
+Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_134_134_clk2/fifo_134_134_clk2/fifo_134_134_clk2_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_dst_fifo/i_fifo_134_134_clk2'
+Finished Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.gen/sources_1/ip/fifo_134_134_clk2/fifo_134_134_clk2/fifo_134_134_clk2_in_context.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_dst_fifo/i_fifo_134_134_clk2'
+Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc] for cell 'i_pcileech_pcie_a7/i_pcie_7x_0/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc:133]
+Finished Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc] for cell 'i_pcileech_pcie_a7/i_pcie_7x_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pcileech_enigma_x1_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pcileech_enigma_x1_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/constrs_1/imports/src/pcileech_enigma_x1.xdc]
+Finished Parsing XDC File [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/constrs_1/imports/src/pcileech_enigma_x1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/constrs_1/imports/src/pcileech_enigma_x1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pcileech_enigma_x1_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pcileech_enigma_x1_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pcileech_enigma_x1_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pcileech_enigma_x1_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/ip_xilinx_pcie_2_1_7x_late.xdc] for cell 'i_pcileech_pcie_a7/i_pcie_7x_0/inst'
+Finished Parsing XDC File [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/ip_xilinx_pcie_2_1_7x_late.xdc] for cell 'i_pcileech_pcie_a7/i_pcie_7x_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/ip_xilinx_pcie_2_1_7x_late.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pcileech_enigma_x1_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pcileech_enigma_x1_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pcileech_enigma_x1_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pcileech_enigma_x1_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 2 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1883.898 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 1883.898 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/i_bram_bar_zero4k' at clock pin 'clka' is different from the actual clock period '16.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_pcileech_mem_wrap/i_bram_pcie_cfgspace' at clock pin 'clka' is different from the actual clock period '16.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 1883.898 ; gain = 789.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a75tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 1883.898 ; gain = 789.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IOB = TRUE for i_pcileech_com/i_pcileech_ft601/FT601_OE_N_reg. (constraint file  {C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/constrs_1/imports/src/pcileech_enigma_x1.xdc}, line 81).
+Applied set_property IOB = TRUE for i_pcileech_com/i_pcileech_ft601/FT601_RD_N_reg. (constraint file  {C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/constrs_1/imports/src/pcileech_enigma_x1.xdc}, line 82).
+Applied set_property IOB = TRUE for i_pcileech_com/i_pcileech_ft601/FT601_WR_N_reg. (constraint file  {C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/constrs_1/imports/src/pcileech_enigma_x1.xdc}, line 83).
+Applied set_property IOB = TRUE for i_pcileech_com/i_pcileech_ft601/\FT601_DATA_OUT_reg[0] . (constraint file  {C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/constrs_1/imports/src/pcileech_enigma_x1.xdc}, line 84).
+Applied set_property KEEP_HIERARCHY = SOFT for i_pcileech_pcie_a7/i_pcie_7x_0/inst. (constraint file  {C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/dont_touch.xdc}, line 10).
+Applied set_property KEEP_HIERARCHY = SOFT for i_pcileech_pcie_a7/i_pcie_7x_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/i_fifo_134_134_clk1_bar_rdrsp. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_fifo_43_43_clk2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for i_pcileech_pcie_a7/i_pcileech_pcie_cfg_a7/i_fifo_pcie_cfg_rx. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_pcileech_cfgspace_pcie_tx/i_fifo_129_129_clk1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/i_fifo_74_74_clk1_bar_rd1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/i_bram_bar_zero4k. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_src_fifo/i_fifo_1_1_clk2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_src_fifo/i_fifo_134_134_clk2_rxfifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for i_pcileech_fifo/i_fifo_cmd_rx. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for i_pcileech_com/i_fifo_32_32_clk2_comtx. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_pcileech_mem_wrap/i_bram_pcie_cfgspace. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_wrengine/i_fifo_141_141_clk1_bar_wr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for i_pcileech_com/i_fifo_64_64_clk2_comrx. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for i_pcileech_fifo/i_fifo_cmd_tx. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for i_pcileech_fifo/i_fifo_loop_tx. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_pcileech_mem_wrap/i_drom_pcie_cfgspace_writemask. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for i_pcileech_pcie_a7/i_pcileech_pcie_cfg_a7/i_fifo_pcie_cfg_tx. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for i_pcileech_com/i_fifo_256_32_clk2_comtx. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_fifo_49_49_clk2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_dst_fifo/i_fifo_134_134_clk2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/phy_lnk_up_cdc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pl_received_hot_rst_cdc. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 1883.898 ; gain = 789.922
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'pcileech_ft601'
+INFO: [Synth 8-802] inferred FSM for state register 'com_rx_valid64_dw_reg' in module 'pcileech_com'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'pcileech_tlps128_bar_wrengine'
+INFO: [Synth 8-802] inferred FSM for state register 'reg_state_eios_det_reg' in module 'pcie_7x_0_gt_rx_valid_filter_7x'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_reg' in module 'pcie_7x_0_gtp_pipe_reset'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_reg' in module 'pcie_7x_0_qpll_reset'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_reg' in module 'pcie_7x_0_gtp_pipe_rate'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_reg' in module 'pcie_7x_0_rxeq_scan'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_tx_reg' in module 'pcie_7x_0_pipe_eq'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_rx_reg' in module 'pcie_7x_0_pipe_eq'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_reg' in module 'pcie_7x_0_qpll_drp'
+INFO: [Synth 8-802] inferred FSM for state register 'resetovrd.fsm_reg' in module 'pcie_7x_0_pipe_user'
+INFO: [Synth 8-802] inferred FSM for state register 'txsync_fsm.fsm_tx_reg' in module 'pcie_7x_0_pipe_sync'
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'pcileech_ft601', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  iSTATE |                             0000 |                             0000
+                 iSTATE0 |                             0010 |                             0010
+                 iSTATE1 |                             0011 |                             0011
+                 iSTATE2 |                             0100 |                             0100
+                 iSTATE3 |                             0101 |                             0101
+                 iSTATE4 |                             0110 |                             0110
+                 iSTATE5 |                             0111 |                             0111
+                 iSTATE6 |                             1000 |                             1000
+                 iSTATE7 |                             1001 |                             1001
+                 iSTATE8 |                             1010 |                             1010
+                 iSTATE9 |                             1011 |                             1011
+                iSTATE10 |                             1100 |                             1100
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                              001 |                               00
+*
+                 iSTATE0 |                              010 |                               01
+                  iSTATE |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'com_rx_valid64_dw_reg' using encoding 'one-hot' in module 'pcileech_com'
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'pcileech_tlps128_bar_wrengine', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  iSTATE |                             0000 |                             0000
+                 iSTATE0 |                             0001 |                             0001
+                 iSTATE1 |                             0010 |                             0010
+                 iSTATE2 |                             0100 |                             0100
+                 iSTATE3 |                             0101 |                             0101
+                 iSTATE4 |                             0110 |                             0110
+                 iSTATE5 |                             0111 |                             0111
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+            EIOS_DET_IDL |                            00001 |                            00001
+        EIOS_DET_NO_STR0 |                            00010 |                            00010
+           EIOS_DET_STR0 |                            00100 |                            00100
+           EIOS_DET_STR1 |                            01000 |                            01000
+           EIOS_DET_DONE |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'reg_state_eios_det_reg' in module 'pcie_7x_0_gt_rx_valid_filter_7x'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            FSM_CFG_WAIT |                  000000000000001 |                            00001
+            FSM_PLLRESET |                  001000000000000 |                            00010
+       FSM_DRP_X16_START |                  000001000000000 |                            00011
+        FSM_DRP_X16_DONE |                  000010000000000 |                            00100
+             FSM_PLLLOCK |                  000000100000000 |                            00101
+             FSM_GTRESET |                  000000001000000 |                            00110
+    FSM_RXPMARESETDONE_1 |                  000000000000100 |                            00111
+    FSM_RXPMARESETDONE_2 |                  000000000001000 |                            01000
+       FSM_DRP_X20_START |                  000000000010000 |                            01001
+        FSM_DRP_X20_DONE |                  000000000100000 |                            01010
+           FSM_MMCM_LOCK |                  100000000000000 |                            01011
+           FSM_RESETDONE |                  010000000000000 |                            01100
+        FSM_TXSYNC_START |                  000100000000000 |                            01101
+         FSM_TXSYNC_DONE |                  000000010000000 |                            01110
+                FSM_IDLE |                  000000000000010 |                            00000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_reg' using encoding 'one-hot' in module 'pcie_7x_0_gtp_pipe_reset'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+           FSM_WAIT_LOCK |                         00000001 |                             0010
+           FSM_MMCM_LOCK |                         00000010 |                             0011
+       FSM_DRP_START_NOM |                         00000100 |                             0100
+        FSM_DRP_DONE_NOM |                         00001000 |                             0101
+            FSM_QPLLLOCK |                         00010000 |                             0110
+        FSM_QPLL_PDRESET |                         00100000 |                             1011
+             FSM_QPLL_PD |                         01000000 |                             1100
+                FSM_IDLE |                         10000000 |                             0001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_reg' using encoding 'one-hot' in module 'pcie_7x_0_qpll_reset'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                FSM_IDLE |                    0000000010000 |                             0000
+         FSM_TXDATA_WAIT |                    0000100000000 |                             0001
+            FSM_PCLK_SEL |                    0000000001000 |                             0010
+       FSM_DRP_X16_START |                    0000000000001 |                             0011
+        FSM_DRP_X16_DONE |                    0000000000010 |                             0100
+            FSM_RATE_SEL |                    0000000000100 |                             0101
+      FSM_RXPMARESETDONE |                    1000000000000 |                             0110
+       FSM_DRP_X20_START |                    0001000000000 |                             0111
+        FSM_DRP_X20_DONE |                    0010000000000 |                             1000
+           FSM_RATE_DONE |                    0100000000000 |                             1001
+        FSM_TXSYNC_START |                    0000010000000 |                             1010
+         FSM_TXSYNC_DONE |                    0000001000000 |                             1011
+                FSM_DONE |                    0000000100000 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_reg' using encoding 'one-hot' in module 'pcie_7x_0_gtp_pipe_rate'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                            00001 |                             0000
+*
+                FSM_IDLE |                            00010 |                             0001
+              FSM_PRESET |                            00100 |                             0010
+            FSM_CONVERGE |                            01000 |                             0100
+     FSM_NEW_TXCOEFF_REQ |                            10000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_reg' using encoding 'one-hot' in module 'pcie_7x_0_rxeq_scan'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                           000000
+*
+           FSM_TXEQ_IDLE |                              001 |                           000001
+         FSM_TXEQ_PRESET |                              010 |                           000010
+        FSM_TXEQ_TXCOEFF |                              011 |                           000100
+          FSM_TXEQ_REMAP |                              100 |                           001000
+          FSM_TXEQ_QUERY |                              101 |                           010000
+           FSM_TXEQ_DONE |                              110 |                           100000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_tx_reg' using encoding 'sequential' in module 'pcie_7x_0_pipe_eq'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                          0000001 |                           000000
+*
+           FSM_RXEQ_IDLE |                          0000010 |                           000001
+         FSM_RXEQ_PRESET |                          0000100 |                           000010
+        FSM_RXEQ_TXCOEFF |                          0001000 |                           000100
+             FSM_RXEQ_LF |                          0010000 |                           001000
+FSM_RXEQ_NEW_TXCOEFF_REQ |                          0100000 |                           010000
+           FSM_RXEQ_DONE |                          1000000 |                           100000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_rx_reg' using encoding 'one-hot' in module 'pcie_7x_0_pipe_eq'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                FSM_IDLE |                        000000001 |                        000000001
+                FSM_LOAD |                        000000010 |                        000000010
+                FSM_READ |                        000000100 |                        000000100
+                FSM_RRDY |                        000001000 |                        000001000
+               FSM_WRITE |                        000010000 |                        000010000
+                FSM_WRDY |                        000100000 |                        000100000
+                FSM_DONE |                        001000000 |                        001000000
+           FSM_QPLLRESET |                        010000000 |                        010000000
+            FSM_QPLLLOCK |                        100000000 |                        100000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'fsm_reg' in module 'pcie_7x_0_qpll_drp'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                FSM_IDLE |                             0010 |                               00
+           FSM_RESETOVRD |                             1000 |                               01
+          FSM_RESET_INIT |                             0100 |                               10
+               FSM_RESET |                             0001 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'resetovrd.fsm_reg' using encoding 'one-hot' in module 'pcie_7x_0_pipe_user'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                          0000001 |                           000000
+*
+         FSM_TXSYNC_IDLE |                          0000010 |                           000001
+           FSM_MMCM_LOCK |                          0000100 |                           000010
+        FSM_TXSYNC_START |                          0001000 |                           000100
+        FSM_TXPHINITDONE |                          0010000 |                           001000
+        FSM_TXSYNC_DONE1 |                          0100000 |                           010000
+        FSM_TXSYNC_DONE2 |                          1000000 |                           100000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'txsync_fsm.fsm_tx_reg' using encoding 'one-hot' in module 'pcie_7x_0_pipe_sync'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:35 . Memory (MB): peak = 1883.898 ; gain = 789.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   65 Bit       Adders := 1     
+	   2 Input   64 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 3     
+	   2 Input   22 Bit       Adders := 1     
+	   2 Input   19 Bit       Adders := 30    
+	   2 Input   12 Bit       Adders := 3     
+	   4 Input   11 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 2     
+	   3 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 3     
+	   2 Input    5 Bit       Adders := 4     
+	  12 Input    4 Bit       Adders := 1     
+	   9 Input    4 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 7     
+	   3 Input    4 Bit       Adders := 2     
+	   4 Input    4 Bit       Adders := 1     
+	   5 Input    4 Bit       Adders := 1     
+	   6 Input    4 Bit       Adders := 1     
+	   7 Input    4 Bit       Adders := 1     
+	   8 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 3     
+	   4 Input    3 Bit       Adders := 1     
+	   3 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 4     
+	   2 Input    1 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	              704 Bit    Registers := 1     
+	              256 Bit    Registers := 1     
+	              240 Bit    Registers := 1     
+	              128 Bit    Registers := 7     
+	               96 Bit    Registers := 2     
+	               88 Bit    Registers := 4     
+	               86 Bit    Registers := 3     
+	               80 Bit    Registers := 1     
+	               64 Bit    Registers := 6     
+	               34 Bit    Registers := 1     
+	               32 Bit    Registers := 29    
+	               22 Bit    Registers := 2     
+	               19 Bit    Registers := 1     
+	               18 Bit    Registers := 8     
+	               16 Bit    Registers := 11    
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 7     
+	                7 Bit    Registers := 4     
+	                6 Bit    Registers := 17    
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 39    
+	                3 Bit    Registers := 17    
+	                2 Bit    Registers := 19    
+	                1 Bit    Registers := 292   
++---Muxes : 
+	   2 Input  704 Bit        Muxes := 38    
+	   5 Input  704 Bit        Muxes := 2     
+	   2 Input  256 Bit        Muxes := 1     
+	   2 Input  240 Bit        Muxes := 40    
+	   4 Input  232 Bit        Muxes := 1     
+	   2 Input  129 Bit        Muxes := 1     
+	   2 Input  128 Bit        Muxes := 9     
+	   2 Input   86 Bit        Muxes := 3     
+	   3 Input   86 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 3     
+	   6 Input   64 Bit        Muxes := 1     
+	   5 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 245   
+	   8 Input   32 Bit        Muxes := 1     
+	   2 Input   30 Bit        Muxes := 1     
+	   2 Input   22 Bit        Muxes := 4     
+	   5 Input   22 Bit        Muxes := 1     
+	   2 Input   19 Bit        Muxes := 1     
+	   7 Input   19 Bit        Muxes := 1     
+	   2 Input   18 Bit        Muxes := 3     
+	   7 Input   18 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 7     
+	   4 Input   16 Bit        Muxes := 1     
+	  15 Input   15 Bit        Muxes := 1     
+	   2 Input   15 Bit        Muxes := 13    
+	  13 Input   13 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 10    
+	   2 Input   12 Bit        Muxes := 3     
+	   2 Input   11 Bit        Muxes := 3     
+	   2 Input   10 Bit        Muxes := 4     
+	   2 Input    9 Bit        Muxes := 5     
+	  10 Input    9 Bit        Muxes := 1     
+	   3 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 12    
+	   5 Input    8 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 14    
+	   7 Input    7 Bit        Muxes := 2     
+	   4 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 3     
+	   7 Input    6 Bit        Muxes := 3     
+	   8 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 19    
+	   3 Input    5 Bit        Muxes := 1     
+	   6 Input    5 Bit        Muxes := 1     
+	  15 Input    5 Bit        Muxes := 1     
+	   8 Input    5 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 259   
+	   8 Input    4 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 1     
+	   7 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	  13 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 24    
+	   6 Input    3 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 1     
+	  13 Input    3 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 3     
+	   4 Input    3 Bit        Muxes := 1     
+	  10 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 10    
+	   3 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 1     
+	   7 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 384   
+	   8 Input    1 Bit        Muxes := 15    
+	   6 Input    1 Bit        Muxes := 3     
+	  15 Input    1 Bit        Muxes := 3     
+	  13 Input    1 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 8     
+	   4 Input    1 Bit        Muxes := 2     
+	   7 Input    1 Bit        Muxes := 17    
+	  10 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 180 (col length:80)
+BRAMs: 210 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design pcileech_enigma_x1_top has port pcie_wake_n driven by constant 1
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pcileech_mux/\dout_buf_data_reg[228] )
+INFO: [Synth 8-3886] merging instance 'i_pcileech_mux/dout_buf_data_reg[229]' (FDSE) to 'i_pcileech_mux/dout_buf_data_reg[230]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_mux/dout_buf_data_reg[230]' (FDSE) to 'i_pcileech_mux/dout_buf_data_reg[231]'
+INFO: [Synth 8-4471] merging register 'i_bar1/rd_req_ctx_1_reg[87:0]' into 'i_bar0/drd_req_ctx_reg[87:0]' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_tlps128_bar_controller.sv:733]
+INFO: [Synth 8-4471] merging register 'i_bar1/rd_rsp_ctx_reg[87:0]' into 'i_bar0/rd_rsp_ctx_reg[87:0]' [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_tlps128_bar_controller.sv:736]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_pcileech_tlps128_filter/tuser_reg' and it is trimmed from '9' to '1' bits. [C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/imports/src/pcileech_pcie_tlp_a7.sv:174]
+INFO: [Synth 8-4471] merging register 'pipe_wrapper_i/qpll_reset.qpll_reset_i/ovrd_reg' into 'pipe_wrapper_i/gtp_pipe_reset.gtp_pipe_reset_i/pllpd_reg' [c:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_qpll_reset.v:194]
+INFO: [Synth 8-5544] ROM "pipe_wrapper_i/pipe_lane[0].pipe_quad.gt_common_enabled.gt_common_int.gt_common_i/qpll_drp_i/addr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_pkt2_reg[74]' (FDE) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_pkt2_reg[75]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_pkt2_reg[75] )
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[24]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_req_addr_1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[24]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_rsp_data_reg[24]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[25]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_req_addr_1_reg[25]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[25]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_rsp_data_reg[25]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[26]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_req_addr_1_reg[26]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[26]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_rsp_data_reg[26]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[27]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_req_addr_1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[27]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_rsp_data_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[28]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_req_addr_1_reg[28]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[28]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_rsp_data_reg[28]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[29]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_req_addr_1_reg[29]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[29]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_rsp_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[30]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_req_addr_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[30]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_rsp_data_reg[30]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[31]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_req_addr_1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[31]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_rsp_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[16]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_req_addr_1_reg[16]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[16]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_rsp_data_reg[16]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[17]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_req_addr_1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[17]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_rsp_data_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[18]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_req_addr_1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[18]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_rsp_data_reg[18]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[19]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_req_addr_1_reg[19]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[19]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_rsp_data_reg[19]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[20]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_req_addr_1_reg[20]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[20]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_rsp_data_reg[20]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[21]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_req_addr_1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[21]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_rsp_data_reg[21]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[22]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_req_addr_1_reg[22]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[22]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_rsp_data_reg[22]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[23]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_req_addr_1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[23]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_rsp_data_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[12]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_req_addr_1_reg[12]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[12]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_rsp_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[13]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_req_addr_1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[13]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_rsp_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[14]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_req_addr_1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[14]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_rsp_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[15]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_req_addr_1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[15]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_rsp_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_pcie_7x_0/inst/inst/pcie_top_i/axi_basic_top/rx_inst/rx_pipeline_inst/data_prev_reg' (FDR) to 'i_pcie_7x_0/inst/inst/pcie_top_i/axi_basic_top/tx_inst/tx_pipeline_inst/throttle_ctl_pipeline.reg_tuser_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_eq.pipe_eq_i/txeq_preset_reg[5]' (FDE) to 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_eq.pipe_eq_i/txeq_preset_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pcie_7x_0/inst/\inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_quad.gt_common_enabled.gt_common_int.gt_common_i/qpll_drp_i/mode_reg )
+INFO: [Synth 8-3886] merging instance 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gtp_pipe_drp.gtp_pipe_drp_i/addr_reg_reg[0]' (FDR) to 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gtp_pipe_drp.gtp_pipe_drp_i/addr_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_quad.gt_common_enabled.gt_common_int.gt_common_i/qpll_drp_i/addr_reg[3]' (FDR) to 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_quad.gt_common_enabled.gt_common_int.gt_common_i/qpll_drp_i/addr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_quad.gt_common_enabled.gt_common_int.gt_common_i/qpll_drp_i/addr_reg[4]' (FDR) to 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_quad.gt_common_enabled.gt_common_int.gt_common_i/qpll_drp_i/addr_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pcie_7x_0/inst/\inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_quad.gt_common_enabled.gt_common_int.gt_common_i/qpll_drp_i/addr_reg[6] )
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_req_addr_1_reg[0]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_req_addr_1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_rsp_data_reg[0]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_rsp_data_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_req_addr_1_reg[1] )
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_rsp_data_reg[1]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_req_addr_1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_eq.pipe_eq_i/txeq_preset_reg[6]' (FDE) to 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_eq.pipe_eq_i/txeq_preset_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pcie_7x_0/inst/\inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_eq.pipe_eq_i/txeq_preset_reg[4] )
+INFO: [Synth 8-3886] merging instance 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gtp_pipe_rate.gtp_pipe_rate_i/rate_out_reg[1]' (FDRE) to 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gtp_pipe_rate.gtp_pipe_rate_i/rate_out_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pcie_7x_0/inst/\inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gtp_pipe_rate.gtp_pipe_rate_i/rate_out_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pcie_7x_0/inst/\inst/gt_top_i/pipe_wrapper_i/gtp_pipe_reset.gtp_pipe_reset_i/pllpd_reg )
+INFO: [Synth 8-3886] merging instance 'i_pcie_7x_0/inst/inst/pcie_top_i/axi_basic_top/tx_inst/tx_pipeline_inst/throttle_ctl_pipeline.reg_tuser_reg[2]' (FDR) to 'i_pcie_7x_0/inst/inst/pcie_top_i/axi_basic_top/tx_inst/tx_pipeline_inst/throttle_ctl_pipeline.reg_tuser_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_pcie_7x_0/inst/inst/pcie_top_i/axi_basic_top/tx_inst/tx_pipeline_inst/throttle_ctl_pipeline.reg_tuser_reg[3]' (FDR) to 'i_pcie_7x_0/inst/inst/pcie_top_i/axi_basic_top/tx_inst/tx_pipeline_inst/throttle_ctl_pipeline.reg_tuser_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_pcie_7x_0/inst/inst/pcie_top_i/axi_basic_top/tx_inst/tx_pipeline_inst/throttle_ctl_pipeline.reg_tuser_reg[1]' (FDR) to 'i_pcie_7x_0/inst/inst/pcie_top_i/axi_basic_top/tx_inst/tx_pipeline_inst/throttle_ctl_pipeline.reg_tuser_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pcie_7x_0/inst/\inst/pcie_top_i/axi_basic_top/tx_inst/tx_pipeline_inst/throttle_ctl_pipeline.reg_tuser_reg[0] )
+INFO: [Synth 8-3886] merging instance 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gtp_pipe_drp.gtp_pipe_drp_i/addr_reg_reg[1]' (FDR) to 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gtp_pipe_drp.gtp_pipe_drp_i/addr_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gtp_pipe_drp.gtp_pipe_drp_i/addr_reg_reg[2]' (FDR) to 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gtp_pipe_drp.gtp_pipe_drp_i/addr_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gtp_pipe_drp.gtp_pipe_drp_i/addr_reg_reg[3]' (FDR) to 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gtp_pipe_drp.gtp_pipe_drp_i/addr_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gtp_pipe_drp.gtp_pipe_drp_i/addr_reg_reg[5]' (FDR) to 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gtp_pipe_drp.gtp_pipe_drp_i/addr_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gtp_pipe_drp.gtp_pipe_drp_i/addr_reg_reg[6]' (FDR) to 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gtp_pipe_drp.gtp_pipe_drp_i/addr_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gtp_pipe_drp.gtp_pipe_drp_i/addr_reg_reg[7]' (FDR) to 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gtp_pipe_drp.gtp_pipe_drp_i/addr_reg_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pcie_7x_0/inst/\inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gtp_pipe_drp.gtp_pipe_drp_i/addr_reg_reg[8] )
+INFO: [Synth 8-3886] merging instance 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_sync_i/rxsync_fsm_disable.fsm_rx_reg[3]' (FD) to 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_sync_i/rxsync_fsm_disable.fsm_rx_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_sync_i/rxsync_fsm_disable.fsm_rx_reg[2]' (FD) to 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_sync_i/rxsync_fsm_disable.fsm_rx_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_sync_i/rxsync_fsm_disable.fsm_rx_reg[5]' (FD) to 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_sync_i/rxsync_fsm_disable.fsm_rx_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_sync_i/rxsync_fsm_disable.fsm_rx_reg[4]' (FD) to 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_sync_i/rxsync_fsm_disable.fsm_rx_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_sync_i/rxsync_fsm_disable.fsm_rx_reg[6]' (FD) to 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_sync_i/rxsync_fsm_disable.fsm_rx_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_sync_i/rxsync_fsm_disable.fsm_rx_reg[1]' (FD) to 'i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_sync_i/rxsync_fsm_disable.rxdlyen_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pcie_7x_0/inst/\inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_sync_i/rxsync_fsm_disable.rxdlyen_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_pcie_7x_0/inst/\inst/pcie_top_i/axi_basic_top/tx_inst/thrtl_ctl_enabled.tx_thrl_ctl_inst/ecrc_pause_enabled.reg_tx_ecrc_pkt_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_filter/tkeepdw_reg[0] )
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_out_data_reg[74]' (FDE) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_out_data_reg[75]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd3_process_data_reg[74]' (FDE) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd3_process_data_reg[75]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[74]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[75]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[74]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[75]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_out_data_reg[75] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_req_addr_1_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd3_process_data_reg[75] )
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar1/rd_req_addr_1_reg[1]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[75]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[75] )
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[75]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[75]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[75] )
+INFO: [Synth 8-3332] Sequential element (inst/gt_top_i/pipe_wrapper_i/qpll_reset.qpll_reset_i/FSM_onehot_fsm_reg[7]) is unused and will be removed from module pcie_7x_0_pcie2_top.
+INFO: [Synth 8-3332] Sequential element (inst/gt_top_i/pipe_wrapper_i/qpll_reset.qpll_reset_i/FSM_onehot_fsm_reg[6]) is unused and will be removed from module pcie_7x_0_pcie2_top.
+INFO: [Synth 8-3332] Sequential element (inst/gt_top_i/pipe_wrapper_i/qpll_reset.qpll_reset_i/FSM_onehot_fsm_reg[5]) is unused and will be removed from module pcie_7x_0_pcie2_top.
+INFO: [Synth 8-3332] Sequential element (inst/gt_top_i/pipe_wrapper_i/qpll_reset.qpll_reset_i/FSM_onehot_fsm_reg[4]) is unused and will be removed from module pcie_7x_0_pcie2_top.
+INFO: [Synth 8-3332] Sequential element (inst/gt_top_i/pipe_wrapper_i/qpll_reset.qpll_reset_i/FSM_onehot_fsm_reg[3]) is unused and will be removed from module pcie_7x_0_pcie2_top.
+INFO: [Synth 8-3332] Sequential element (inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_eq.pipe_eq_i/rxeq_scan_i/FSM_onehot_fsm_reg[0]) is unused and will be removed from module pcie_7x_0_pcie2_top.
+INFO: [Synth 8-3332] Sequential element (inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_eq.pipe_eq_i/FSM_onehot_fsm_rx_reg[0]) is unused and will be removed from module pcie_7x_0_pcie2_top.
+INFO: [Synth 8-3332] Sequential element (inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_sync_i/FSM_onehot_txsync_fsm.fsm_tx_reg[0]) is unused and will be removed from module pcie_7x_0_pcie2_top.
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_total_dwlen_reg[5]' (FDE) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_pkt2_reg[81]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_total_dwlen_reg[0]' (FDE) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_pkt2_reg[76]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_total_dwlen_reg[4]' (FDE) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_pkt2_reg[80]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_total_dwlen_reg[3]' (FDE) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_pkt2_reg[79]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_total_dwlen_reg[2]' (FDE) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_pkt2_reg[78]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_total_dwlen_reg[1]' (FDE) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_pkt2_reg[77]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_total_dwlen_reg[6]' (FDE) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_pkt2_reg[82]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_total_dwlen_reg[7]' (FDE) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_pkt2_reg[83]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_total_dwlen_reg[8]' (FDE) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_pkt2_reg[84]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_total_dwlen_reg[9]' (FDE) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_pkt2_reg[85]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_pkt2_reg[69]' (FDE) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_pkt2_reg[70]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_pkt2_reg[70]' (FDE) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_pkt2_reg[71]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_pkt2_reg[71]' (FDE) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_pkt2_reg[72]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_pkt2_reg[72] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\i_pcileech_tlps128_src64/len_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_out_data_reg[69]' (FDE) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_out_data_reg[70]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd3_process_data_reg[69]' (FDE) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd3_process_data_reg[70]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[69]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[70]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[69]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[70]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_out_data_reg[70]' (FDE) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_out_data_reg[71]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd3_process_data_reg[70]' (FDE) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd3_process_data_reg[71]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[70]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[71]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[70]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[71]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_out_data_reg[71]' (FDE) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_out_data_reg[72]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd3_process_data_reg[71]' (FDE) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd3_process_data_reg[72]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[71]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[72]'
+INFO: [Synth 8-3886] merging instance 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[71]' (FD) to 'i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[72]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd2_out_data_reg[72] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/rd3_process_data_reg[72] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/drd_req_ctx_reg[72] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/rd_rsp_ctx_reg[72] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:33 . Memory (MB): peak = 1883.898 ; gain = 789.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:04 ; elapsed = 00:01:42 . Memory (MB): peak = 1883.898 ; gain = 789.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:46 . Memory (MB): peak = 1883.898 ; gain = 789.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:11 ; elapsed = 00:01:52 . Memory (MB): peak = 1944.047 ; gain = 850.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][24]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][25]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][26]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][27]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][28]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][29]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][30]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][31]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][16]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][17]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][18]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][19]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][20]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][21]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][22]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][23]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][8]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][9]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][10]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][11]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][12]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][13]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][14]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][15]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][0]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][1]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][2]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][3]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][4]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][5]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][6]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \i_pcileech_com/i_pcileech_ft601/FT601_DATA_OUT_reg[0][7]  to handle IOB=TRUE attribute
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:15 ; elapsed = 00:01:58 . Memory (MB): peak = 1958.129 ; gain = 864.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:15 ; elapsed = 00:01:58 . Memory (MB): peak = 1958.129 ; gain = 864.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:15 ; elapsed = 00:02:00 . Memory (MB): peak = 1958.129 ; gain = 864.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:15 ; elapsed = 00:02:00 . Memory (MB): peak = 1958.129 ; gain = 864.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:17 ; elapsed = 00:02:03 . Memory (MB): peak = 1958.129 ; gain = 864.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:17 ; elapsed = 00:02:03 . Memory (MB): peak = 1958.129 ; gain = 864.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name         | RTL Name                                                                                                                                          | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|pcie_7x_0_pcie2_top | inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_quad.gt_common_enabled.gt_common_int.gt_common_i/qpll_wrapper_i/cpllPDInst/cpllpd_wait_reg[95]     | 96     | 1     | NO           | NO                 | YES               | 0      | 3       | 
+|pcie_7x_0_pcie2_top | inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_quad.gt_common_enabled.gt_common_int.gt_common_i/qpll_wrapper_i/cpllPDInst/cpllreset_wait_reg[127] | 128    | 1     | NO           | NO                 | YES               | 0      | 4       | 
+|pcie_7x_0_pcie2_top | inst/ltssm_reg2_reg[5]                                                                                                                            | 3      | 6     | NO           | NO                 | YES               | 6      | 0       | 
++--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------+----------+
+|      |BlackBox name                |Instances |
++------+-----------------------------+----------+
+|1     |fifo_64_64_clk2_comrx        |         1|
+|2     |fifo_32_32_clk1_comtx        |         1|
+|3     |fifo_256_32_clk2_comtx       |         1|
+|4     |fifo_64_64_clk1_fifocmd      |         1|
+|5     |fifo_34_34                   |         2|
+|6     |fifo_64_64                   |         1|
+|7     |fifo_32_32_clk2              |         1|
+|8     |bram_bar_zero4k              |         1|
+|9     |fifo_74_74_clk1_bar_rd1      |         1|
+|10    |fifo_134_134_clk1_bar_rdrsp  |         1|
+|11    |fifo_141_141_clk1_bar_wr     |         1|
+|12    |fifo_49_49_clk2              |         1|
+|13    |fifo_43_43_clk2              |         1|
+|14    |fifo_129_129_clk1            |         1|
+|15    |bram_pcie_cfgspace           |         1|
+|16    |drom_pcie_cfgspace_writemask |         1|
+|17    |fifo_134_134_clk2            |         1|
+|18    |fifo_1_1_clk2                |         1|
+|19    |fifo_134_134_clk2_rxfifo     |         1|
++------+-----------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------+------+
+|      |Cell                         |Count |
++------+-----------------------------+------+
+|1     |bram_bar_zero4k              |     1|
+|2     |bram_pcie_cfgspace           |     1|
+|3     |drom_pcie_cfgspace_writemask |     1|
+|4     |fifo_129_129_clk1            |     1|
+|5     |fifo_134_134_clk1_bar_rdrsp  |     1|
+|6     |fifo_134_134_clk2            |     1|
+|7     |fifo_134_134_clk2_rxfifo     |     1|
+|8     |fifo_141_141_clk1_bar_wr     |     1|
+|9     |fifo_1_1_clk2                |     1|
+|10    |fifo_256_32_clk2_comtx       |     1|
+|11    |fifo_32_32_clk1_comtx        |     1|
+|12    |fifo_32_32_clk2              |     1|
+|13    |fifo_34                      |     1|
+|14    |fifo_34_34                   |     1|
+|15    |fifo_43_43_clk2              |     1|
+|16    |fifo_49_49_clk2              |     1|
+|17    |fifo_64                      |     1|
+|18    |fifo_64_64_clk1_fifocmd      |     1|
+|19    |fifo_64_64_clk2_comrx        |     1|
+|20    |fifo_74_74_clk1_bar_rd1      |     1|
+|21    |BUFG                         |     6|
+|22    |BUFGCTRL                     |     1|
+|23    |CARRY4                       |   313|
+|24    |GTPE2_CHANNEL                |     1|
+|25    |GTPE2_COMMON                 |     1|
+|26    |IBUFDS_GTE2                  |     1|
+|27    |LUT1                         |   128|
+|28    |LUT2                         |  1376|
+|29    |LUT3                         |  1159|
+|30    |LUT4                         |   901|
+|31    |LUT5                         |  2389|
+|32    |LUT6                         |  4321|
+|33    |MMCME2_ADV                   |     1|
+|34    |MUXF7                        |   121|
+|35    |MUXF8                        |    33|
+|36    |PCIE_2                       |     1|
+|37    |RAMB36E1                     |     6|
+|39    |SRL16E                       |     6|
+|40    |SRLC32E                      |     7|
+|41    |STARTUPE2                    |     1|
+|42    |FDCE                         |     9|
+|43    |FDPE                         |     2|
+|44    |FDRE                         |  4485|
+|45    |FDSE                         |   391|
+|46    |IBUF                         |    10|
+|47    |IOBUF                        |    32|
+|48    |OBUF                         |     8|
+|49    |OBUFT                        |     4|
++------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:17 ; elapsed = 00:02:03 . Memory (MB): peak = 1958.129 ; gain = 864.152
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 103 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:06 ; elapsed = 00:01:55 . Memory (MB): peak = 1958.129 ; gain = 756.395
+Synthesis Optimization Complete : Time (s): cpu = 00:01:17 ; elapsed = 00:02:04 . Memory (MB): peak = 1958.129 ; gain = 864.152
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.251 . Memory (MB): peak = 1963.230 ; gain = 0.000
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-17] Analyzing 507 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1970.883 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 32 instances
+
+Synth Design complete | Checksum: 38689d70
+INFO: [Common 17-83] Releasing license: Synthesis
+433 Infos, 138 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1970.883 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/EnigmaX1/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1/pcileech_enigma_x1_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file pcileech_enigma_x1_top_utilization_synth.rpt -pb pcileech_enigma_x1_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 24 21:59:46 2024...

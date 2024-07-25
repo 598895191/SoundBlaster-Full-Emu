@@ -1,0 +1,347 @@
+
+*** Running vivado
+    with args -log drom_pcie_cfgspace_writemask.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source drom_pcie_cfgspace_writemask.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source drom_pcie_cfgspace_writemask.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 500.645 ; gain = 180.066
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: drom_pcie_cfgspace_writemask
+Command: synth_design -top drom_pcie_cfgspace_writemask -part xc7a35tfgg484-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tfgg484-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16856
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1344.375 ; gain = 438.961
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'drom_pcie_cfgspace_writemask' [e:/SoundBlaster/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/drom_pcie_cfgspace_writemask/synth/drom_pcie_cfgspace_writemask.vhd:66]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 11111111111111111111111111111111 - type: string 
+	Parameter C_DEPTH bound to: 1024 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: drom_pcie_cfgspace_writemask.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_14' declared at 'e:/SoundBlaster/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/drom_pcie_cfgspace_writemask/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3191' bound to instance 'U0' of component 'dist_mem_gen_v8_0_14' [e:/SoundBlaster/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/drom_pcie_cfgspace_writemask/synth/drom_pcie_cfgspace_writemask.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'drom_pcie_cfgspace_writemask' (0#1) [e:/SoundBlaster/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/drom_pcie_cfgspace_writemask/synth/drom_pcie_cfgspace_writemask.vhd:66]
+WARNING: [Synth 8-7129] Port qspo[31] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[30] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[29] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[28] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[27] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[26] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[25] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[24] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[23] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[22] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[21] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[20] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[19] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[18] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[17] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[16] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[15] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[14] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[13] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[12] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[11] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[10] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[9] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[8] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[7] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[6] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[5] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[4] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[3] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[2] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[1] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[0] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[9] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[8] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[7] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[6] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[5] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[4] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[3] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[2] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[1] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[0] in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo_ce in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo_rst in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo_srst in module rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[31] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[30] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[29] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[28] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[27] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[26] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[25] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[24] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[23] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[22] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[21] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[20] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[19] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[18] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[17] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[16] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[15] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[14] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[13] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[12] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[11] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[10] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[9] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[8] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[7] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[6] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[5] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[4] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[3] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[2] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[1] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[0] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[31] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[30] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[29] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[28] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[27] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[26] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[25] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[24] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[23] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[22] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[21] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[20] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[19] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[18] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[17] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[16] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[15] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[14] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[13] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[12] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[11] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[10] in module dist_mem_gen_v8_0_14_synth is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:23 . Memory (MB): peak = 1539.754 ; gain = 634.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:23 . Memory (MB): peak = 1539.754 ; gain = 634.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:23 . Memory (MB): peak = 1539.754 ; gain = 634.340
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1539.754 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/SoundBlaster/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/drom_pcie_cfgspace_writemask/drom_pcie_cfgspace_writemask_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/SoundBlaster/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/drom_pcie_cfgspace_writemask/drom_pcie_cfgspace_writemask_ooc.xdc] for cell 'U0'
+Parsing XDC File [E:/SoundBlaster/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.runs/drom_pcie_cfgspace_writemask_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/SoundBlaster/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.runs/drom_pcie_cfgspace_writemask_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1539.754 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 1539.754 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:01:20 . Memory (MB): peak = 1539.754 ; gain = 634.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:01:20 . Memory (MB): peak = 1539.754 ; gain = 634.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  E:/SoundBlaster/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.runs/drom_pcie_cfgspace_writemask_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:01:21 . Memory (MB): peak = 1539.754 ; gain = 634.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:01:41 . Memory (MB): peak = 1539.754 ; gain = 634.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:01:43 . Memory (MB): peak = 1539.754 ; gain = 634.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-3321] create_clock attempting to set clock on an unknown port/pin for constraint at line 53 of e:/SoundBlaster/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/drom_pcie_cfgspace_writemask/drom_pcie_cfgspace_writemask_ooc.xdc. [e:/SoundBlaster/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/drom_pcie_cfgspace_writemask/drom_pcie_cfgspace_writemask_ooc.xdc:53]
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:01:47 . Memory (MB): peak = 1539.754 ; gain = 634.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:01:47 . Memory (MB): peak = 1539.754 ; gain = 634.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:01:47 . Memory (MB): peak = 1539.754 ; gain = 634.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:01:49 . Memory (MB): peak = 1539.754 ; gain = 634.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:01:49 . Memory (MB): peak = 1539.754 ; gain = 634.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:01:49 . Memory (MB): peak = 1539.754 ; gain = 634.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:01:49 . Memory (MB): peak = 1539.754 ; gain = 634.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:01:49 . Memory (MB): peak = 1539.754 ; gain = 634.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:01:49 . Memory (MB): peak = 1539.754 ; gain = 634.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:01:49 . Memory (MB): peak = 1539.754 ; gain = 634.340
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 159 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:01:39 . Memory (MB): peak = 1539.754 ; gain = 634.340
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:01:49 . Memory (MB): peak = 1539.754 ; gain = 634.340
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1539.754 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1539.754 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Synth Design complete | Checksum: dcb36f57
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 101 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:02:59 . Memory (MB): peak = 1539.754 ; gain = 1025.805
+INFO: [Common 17-1381] The checkpoint 'E:/SoundBlaster/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.runs/drom_pcie_cfgspace_writemask_synth_1/drom_pcie_cfgspace_writemask.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:00 ; elapsed = 00:00:47 . Memory (MB): peak = 1539.754 ; gain = 0.000
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'E:/SoundBlaster/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.runs/drom_pcie_cfgspace_writemask_synth_1/drom_pcie_cfgspace_writemask.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:01 ; elapsed = 00:01:08 . Memory (MB): peak = 1539.754 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file drom_pcie_cfgspace_writemask_utilization_synth.rpt -pb drom_pcie_cfgspace_writemask_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 24 17:41:24 2024...

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tfgg484-2" LaunchTime="1721856948">
+  <File Type="PA-TCL" Name="pcileech_squirrel_top.tcl"/>
+  <File Type="REPORTS-TCL" Name="pcileech_squirrel_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="pcileech_squirrel_top.vds"/>
+  <File Type="RDS-UTIL" Name="pcileech_squirrel_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="pcileech_squirrel_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="pcileech_squirrel_top.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/pcie_7x_0/pcie_7x_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/pcileech_header.svh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/pcileech_header.svh"/>
+        <Attr Name="ImportTime" Val="1720771446"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/pcileech_com.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/pcileech_com.sv"/>
+        <Attr Name="ImportTime" Val="1720771446"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/pcileech_fifo.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/pcileech_fifo.sv"/>
+        <Attr Name="ImportTime" Val="1721850742"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/pcileech_ft601.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/pcileech_ft601.sv"/>
+        <Attr Name="ImportTime" Val="1720771446"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/pcileech_mux.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/pcileech_mux.sv"/>
+        <Attr Name="ImportTime" Val="1720771446"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/pcileech_pcie_a7.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/pcileech_pcie_a7.sv"/>
+        <Attr Name="ImportTime" Val="1720771446"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/pcileech_pcie_cfg_a7.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/pcileech_pcie_cfg_a7.sv"/>
+        <Attr Name="ImportTime" Val="1721850930"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/pcileech_pcie_tlp_a7.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/pcileech_pcie_tlp_a7.sv"/>
+        <Attr Name="ImportTime" Val="1720771446"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/pcileech_tlps128_bar_controller.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/pcileech_tlps128_bar_controller.sv"/>
+        <Attr Name="ImportTime" Val="1720771446"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/pcileech_tlps128_cfgspace_shadow.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/pcileech_tlps128_cfgspace_shadow.sv"/>
+        <Attr Name="ImportTime" Val="1720771446"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/pcileech_squirrel_top.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/pcileech_squirrel_top.sv"/>
+        <Attr Name="ImportTime" Val="1720771446"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ip/pcileech_bar_zero4k.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ip/pcileech_bar_zero4k.coe"/>
+        <Attr Name="ImportTime" Val="1721850170"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ip/pcileech_cfgspace.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ip/pcileech_cfgspace.coe"/>
+        <Attr Name="ImportTime" Val="1721850442"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ip/pcileech_cfgspace_writemask.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ip/pcileech_cfgspace_writemask.coe"/>
+        <Attr Name="ImportTime" Val="1720771446"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/drom_pcie_cfgspace_writemask/pcileech_cfgspace_writemask.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ip/pcileech_cfgspace_writemask.coe"/>
+        <Attr Name="ImportTime" Val="1720771446"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/bram_bar_zero4k/pcileech_bar_zero4k.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ip/pcileech_bar_zero4k.coe"/>
+        <Attr Name="ImportTime" Val="1721850170"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/bram_pcie_cfgspace/pcileech_cfgspace.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="pcileech_squirrel_top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/src/pcileech_squirrel.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/pcileech_squirrel.xdc"/>
+        <Attr Name="ImportTime" Val="1720771446"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_74_74_clk1_bar_rd1"/>
+  <BlockFileSet Type="BlockSrcs" Name="bram_bar_zero4k"/>
+  <BlockFileSet Type="BlockSrcs" Name="bram_pcie_cfgspace"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_1_1_clk2"/>
+  <BlockFileSet Type="BlockSrcs" Name="drom_pcie_cfgspace_writemask"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_64_64_clk2_comrx"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_64_64"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_34_34"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_134_134_clk2_rxfifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_32_32_clk1_comtx"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_134_134_clk1_bar_rdrsp"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_141_141_clk1_bar_wr"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_32_32_clk2"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_43_43_clk2"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_49_49_clk2"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_129_129_clk1"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_256_32_clk2_comtx"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_134_134_clk2"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_64_64_clk1_fifocmd"/>
+</GenRun>

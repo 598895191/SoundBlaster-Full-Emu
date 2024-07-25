@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Jul 24 17:35:50 2024
+# Process ID: 4816
+# Current directory: E:/SoundBlaster/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.runs/fifo_256_32_clk2_comtx_synth_1
+# Command line: vivado.exe -log fifo_256_32_clk2_comtx.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fifo_256_32_clk2_comtx.tcl
+# Log file: E:/SoundBlaster/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.runs/fifo_256_32_clk2_comtx_synth_1/fifo_256_32_clk2_comtx.vds
+# Journal file: E:/SoundBlaster/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.runs/fifo_256_32_clk2_comtx_synth_1\vivado.jou
+# Running On: DESKTOP-3HSA0UC, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 24, Host memory: 68495 MB
+#-----------------------------------------------------------
+source fifo_256_32_clk2_comtx.tcl -notrace

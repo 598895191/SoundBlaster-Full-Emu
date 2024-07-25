@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Jul 24 16:51:09 2024
+# Process ID: 8952
+# Current directory: E:/SoundBlaster/PCIeSquirrel/pcileech_squirrel
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17664 E:\SoundBlaster\PCIeSquirrel\pcileech_squirrel\pcileech_squirrel.xpr
+# Log file: E:/SoundBlaster/PCIeSquirrel/pcileech_squirrel/vivado.log
+# Journal file: E:/SoundBlaster/PCIeSquirrel/pcileech_squirrel\vivado.jou
+# Running On: DESKTOP-3HSA0UC, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 24, Host memory: 68495 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/SoundBlaster/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1

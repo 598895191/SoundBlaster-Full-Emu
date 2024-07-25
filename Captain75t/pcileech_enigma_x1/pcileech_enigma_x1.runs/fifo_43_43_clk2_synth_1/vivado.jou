@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Jul 24 22:40:46 2024
+# Process ID: 2740
+# Current directory: C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/Captain75t/pcileech_enigma_x1/pcileech_enigma_x1.runs/fifo_43_43_clk2_synth_1
+# Command line: vivado.exe -log fifo_43_43_clk2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fifo_43_43_clk2.tcl
+# Log file: C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/Captain75t/pcileech_enigma_x1/pcileech_enigma_x1.runs/fifo_43_43_clk2_synth_1/fifo_43_43_clk2.vds
+# Journal file: C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/Captain75t/pcileech_enigma_x1/pcileech_enigma_x1.runs/fifo_43_43_clk2_synth_1\vivado.jou
+# Running On        :jeffhr
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :12th Gen Intel(R) Core(TM) i5-12600K
+# CPU Frequency     :3686 MHz
+# CPU Physical cores:10
+# CPU Logical cores :16
+# Host memory       :34129 MB
+# Swap memory       :2147 MB
+# Total Virtual     :36276 MB
+# Available Virtual :18664 MB
+#-----------------------------------------------------------
+source fifo_43_43_clk2.tcl -notrace

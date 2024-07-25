@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="fifo_134_134_clk2_rxfifo_synth_1" LaunchDir="C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/Captain75t/pcileech_enigma_x1/pcileech_enigma_x1.runs/fifo_134_134_clk2_rxfifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_141_141_clk1_bar_wr_synth_1" LaunchDir="C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/Captain75t/pcileech_enigma_x1/pcileech_enigma_x1.runs/fifo_141_141_clk1_bar_wr_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_64_64_clk1_fifocmd_synth_1" LaunchDir="C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/Captain75t/pcileech_enigma_x1/pcileech_enigma_x1.runs/fifo_64_64_clk1_fifocmd_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_256_32_clk2_comtx_synth_1" LaunchDir="C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/Captain75t/pcileech_enigma_x1/pcileech_enigma_x1.runs/fifo_256_32_clk2_comtx_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_134_134_clk2_synth_1" LaunchDir="C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/Captain75t/pcileech_enigma_x1/pcileech_enigma_x1.runs/fifo_134_134_clk2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_134_134_clk1_bar_rdrsp_synth_1" LaunchDir="C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/Captain75t/pcileech_enigma_x1/pcileech_enigma_x1.runs/fifo_134_134_clk1_bar_rdrsp_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_43_43_clk2_synth_1" LaunchDir="C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/Captain75t/pcileech_enigma_x1/pcileech_enigma_x1.runs/fifo_43_43_clk2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_34_34_synth_1" LaunchDir="C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/Captain75t/pcileech_enigma_x1/pcileech_enigma_x1.runs/fifo_34_34_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_64_64_clk2_comrx_synth_1" LaunchDir="C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/Captain75t/pcileech_enigma_x1/pcileech_enigma_x1.runs/fifo_64_64_clk2_comrx_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_1_1_clk2_synth_1" LaunchDir="C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/Captain75t/pcileech_enigma_x1/pcileech_enigma_x1.runs/fifo_1_1_clk2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_32_32_clk1_comtx_synth_1" LaunchDir="C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/Captain75t/pcileech_enigma_x1/pcileech_enigma_x1.runs/fifo_32_32_clk1_comtx_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_49_49_clk2_synth_1" LaunchDir="C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/Captain75t/pcileech_enigma_x1/pcileech_enigma_x1.runs/fifo_49_49_clk2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_129_129_clk1_synth_1" LaunchDir="C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/Captain75t/pcileech_enigma_x1/pcileech_enigma_x1.runs/fifo_129_129_clk1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_64_64_synth_1" LaunchDir="C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/Captain75t/pcileech_enigma_x1/pcileech_enigma_x1.runs/fifo_64_64_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_32_32_clk2_synth_1" LaunchDir="C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/Captain75t/pcileech_enigma_x1/pcileech_enigma_x1.runs/fifo_32_32_clk2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="drom_pcie_cfgspace_writemask_synth_1" LaunchDir="C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/Captain75t/pcileech_enigma_x1/pcileech_enigma_x1.runs/drom_pcie_cfgspace_writemask_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_74_74_clk1_bar_rd1_synth_1" LaunchDir="C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/Captain75t/pcileech_enigma_x1/pcileech_enigma_x1.runs/fifo_74_74_clk1_bar_rd1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bram_bar_zero4k_synth_1" LaunchDir="C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/Captain75t/pcileech_enigma_x1/pcileech_enigma_x1.runs/bram_bar_zero4k_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bram_pcie_cfgspace_synth_1" LaunchDir="C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/Captain75t/pcileech_enigma_x1/pcileech_enigma_x1.runs/bram_pcie_cfgspace_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/jeffr/OneDrive/Escritorio/SoundBlaster Full Emu/Captain75t/pcileech_enigma_x1/pcileech_enigma_x1.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="fifo_134_134_clk2_rxfifo_synth_1"/>
+		<Parent Id="fifo_141_141_clk1_bar_wr_synth_1"/>
+		<Parent Id="fifo_64_64_clk1_fifocmd_synth_1"/>
+		<Parent Id="fifo_256_32_clk2_comtx_synth_1"/>
+		<Parent Id="fifo_134_134_clk2_synth_1"/>
+		<Parent Id="fifo_134_134_clk1_bar_rdrsp_synth_1"/>
+		<Parent Id="fifo_43_43_clk2_synth_1"/>
+		<Parent Id="fifo_34_34_synth_1"/>
+		<Parent Id="fifo_64_64_clk2_comrx_synth_1"/>
+		<Parent Id="fifo_1_1_clk2_synth_1"/>
+		<Parent Id="fifo_32_32_clk1_comtx_synth_1"/>
+		<Parent Id="fifo_49_49_clk2_synth_1"/>
+		<Parent Id="fifo_129_129_clk1_synth_1"/>
+		<Parent Id="fifo_64_64_synth_1"/>
+		<Parent Id="fifo_32_32_clk2_synth_1"/>
+		<Parent Id="drom_pcie_cfgspace_writemask_synth_1"/>
+		<Parent Id="fifo_74_74_clk1_bar_rd1_synth_1"/>
+		<Parent Id="bram_bar_zero4k_synth_1"/>
+		<Parent Id="bram_pcie_cfgspace_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+

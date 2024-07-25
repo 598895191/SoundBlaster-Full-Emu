@@ -24,6 +24,8 @@ You'll get something like this in the device manager:
 <br clear="both">
 <img src="https://i.postimg.cc/bY1WLhth/soundblaster.webp" />
 
+<h6 align="left">Since the creation of this firmware on any server, some users experience a slow boot times in Windows, or some minor issues. We tried to solve this problem by implementing 1:1 build of the real device. In most tests, it worked 100% fine.</h6> 
+
 <h3 align="left">If you need more firmware, join our server:</h3>
 <div align="left">
   <a href="https://discord.gg/tu-invitacion" target="_blank">

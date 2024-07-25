@@ -20,6 +20,9 @@ You'll get something like this in the device manager:
 <h4 <strong>DRVSCAN IS OK</strong></h4>
 
 ###
+#SPEEDTEST
+<br clear="both">
+<img src="https://i.postimg.cc/bY1WLhth/soundblaster.webp" />
 
 <h3 align="left">If you need more firmware, join our server:</h3>
 <div align="left">

@@ -26,10 +26,19 @@ You'll get something like this in the device manager:
 
 <h6 align="left">Since the creation of this firmware on any server, some users experience a slow boot times in Windows, or some minor issues. We tried to solve this problem by implementing 1:1 build of the real device. In most tests, it worked 100% fine.</h6> 
 
-<h3 align="left">If you need more firmware, join our server:</h3>
-<div align="left">
-  <a href="https://discord.gg/nationdma" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="discord logo" />
-  </a>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+</head>
+<body>
+  <h3 align="left">If you need more firmware, join our server:</h3>
+  <div align="left">
+    <a href="https://discord.gg/nationdma" target="_blank">
+      <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="discord logo" />
+    </a>
+  </div>
+</body>
+</html>

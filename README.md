@@ -28,7 +28,7 @@ You'll get something like this in the device manager:
 
 <h3 align="left">If you need more firmware, join our server:</h3>
 <div align="left">
-  <a href="https://discord.gg/tu-invitacion" target="_blank">
+  <a href="[https://discord.gg/tu-invitacion](https://discord.gg/nationdma)" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="discord logo" />
   </a>
 </div>
